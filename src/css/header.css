@@ -1,0 +1,36 @@
+.header {
+  padding-top: 14px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-action {
+  font-size: 14px;
+  color: #222;
+  line-height: inherit;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  transition-property: background-color, color, transform;
+
+  &:hover,
+  &:focus-within {
+    background-color: #7352ff;
+    color: #e5e5e5;
+  }
+  &:active {
+    transform: scaleY(0.8) scaleX(1.1);
+  }
+}
+
+@media (hover: none) {
+  .header-action {
+    background-color: #7352ff;
+    color: #e5e5e5;
+  }
+}
