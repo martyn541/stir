@@ -1,0 +1,44 @@
+.hero {
+  padding-top: 52px;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title {
+  font-size: 64px;
+  line-height: 1.1;
+  max-width: 825px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+.hero-text {
+  margin-bottom: 40px;
+  max-width: 630px;
+  text-align: center;
+}
+.contact-form {
+  border: 1px solid #7352ff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 31px;
+  width: 100%;
+  max-width: 475px;
+}
+.contact-form-email {
+  flex-grow: 1;
+}
+.contact-form-email::placeholder {
+  color: #000000;
+}
+.contact-form-buttom {
+  border-radius: 18px;
+  background-color: #7352ff;
+  padding-inline: 45px;
+  padding-block: 21px;
+  color: #ffffff;
+  font-size: 12px;
+}
