@@ -42,3 +42,27 @@
   color: #ffffff;
   font-size: 12px;
 }
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 44px;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .contact-form {
+    align-items: stretch;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 10px;
+    gap: 10px;
+  }
+  .contact-form-email {
+    padding-inline: 20px;
+    font-size: 24px;
+  }
+  .contact-form-buttom {
+    font-size: 18px;
+  }
+}
