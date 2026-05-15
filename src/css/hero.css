@@ -1,5 +1,6 @@
 .hero {
   padding-top: 52px;
+  padding-bottom: 92px;
 }
 .hero-wrapper {
   display: flex;
@@ -64,5 +65,10 @@
   }
   .contact-form-buttom {
     font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .hero {
+    padding-bottom: 1px;
   }
 }
