@@ -1,0 +1,49 @@
+.badge {
+  display: inline-flex;
+  border-radius: 64px;
+  padding-inline: 17px;
+  padding-block: 10px;
+  color: #2b2a35;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  gap: 7px;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../../imges/badge-icon/splits.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.badge-home {
+  color: #7352ff;
+  background-color: #ffffff;
+  &::before {
+    background-image: url(../../imges/badge-icon/home.svg);
+  }
+}
+.badge-splits {
+  color: #2b2a35;
+  background-color: #f7f2e4;
+  &::before {
+    background-image: url(../../imges/badge-icon/splits.svg);
+  }
+}
+.badge-pay {
+  color: #2b2a35;
+  background-color: #6ee4b5;
+  &::before {
+    background-image: url(../../imges/badge-icon/pay.svg);
+  }
+}
+.badge-collectives {
+  color: #ededed;
+  background-color: #191919;
+  &::before {
+    background-image: url(../../imges/badge-icon/collectives.svg);
+  }
+}
