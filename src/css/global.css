@@ -8,5 +8,5 @@ body {
 .wrapper {
   margin-inline: auto;
   max-width: 1230px;
-  padding-inline: auto;
+  padding-inline: 15px;
 }
