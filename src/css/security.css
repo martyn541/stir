@@ -1,31 +1,61 @@
 .security {
   padding: 300px 0 200px;
   background-color: #191919;
+  background-image: url(../imges/security-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 }
-/* <section class="security">
-        <div class="wrapper security-wrapper">
-          <hgroup class="security-heading">
-            <p class="security-subtitle">Serious about security</p>
-            <h2 class="security-title">
-              Our top priority is keeping your data safe and secure.
-            </h2>
-          </hgroup>
-          <ul class="security-list">
-            <li class="security-item">
-              <p class="security-thesis">
-                We will never (ever) share your data
-              </p>
-            </li>
-            <li class="security-item">
-              <p class="security-thesis">
-                Secured by TLS (SSL) 256-bit bank-level encryption
-              </p>
-            </li>
-            <li class="security-item">
-              <p class="security-thesis">
-                We’re a multi-creator network, not an MCN
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section> */
+/*  */
+.security-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.security-heading {
+  max-width: 480px;
+  margin-bottom: 140px;
+}
+.security-subtitle {
+  color: #ff573d;
+  margin-bottom: 13px;
+}
+
+.security-title {
+  font-size: 40px;
+  color: #fff;
+}
+.security-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.security-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 21px;
+    height: 16px;
+    background-image: url(../imges/check.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.security-thesis {
+  color: #fff;
+}
+
+@media (max-width: 1020px) {
+  .security {
+    padding: 100px 0 100px;
+    backdrop-filter: blur(20px);
+  }
+  .security-heading {
+    max-width: 480px;
+    margin-bottom: 50px;
+  }
+}
