@@ -1,0 +1,18 @@
+.example {
+  background-color: #7249ff;
+  padding: 16px 4px 4px;
+  border-radius: 12px;
+}
+.example-content {
+  background-color: #ffffff;
+  padding-top: 90px;
+  border-radius: 8px;
+}
+.example-actions {
+  border-top: 1px solid #ededed;
+  align-self: stretch;
+  padding-block: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

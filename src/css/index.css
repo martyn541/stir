@@ -2,7 +2,10 @@
 @import "./global.css";
 /* компоненти стилів */
 @import "./componets/badge.css";
+@import "./componets/example.css";
+/* секції */
 @import "./header.css";
 @import "./hero.css";
 @import "./creators.css";
+@import "./splits.css";
 @import "./security.css";
