@@ -196,4 +196,10 @@
   color: #61697e;
 }
 @media (max-width: 992px) {
+  .splits-content {
+    flex-direction: column;
+  }
+  .splits-title {
+    font-size: 44px;
+  }
 }
