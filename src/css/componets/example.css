@@ -31,6 +31,42 @@
   color: #ffffff;
   font-size: 12px;
 }
+.example-header {
+  margin-bottom: 20px;
+  padding-inline: 20px;
+}
+.example-nav-link {
+  color: #ffffff;
+  font-weight: 400;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &::before {
+    content: "";
+    width: 19px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../imges/badge-icon/home-white.svg);
+  }
+}
+.example-nav-link-home::before {
+  background-image: url(../../imges/badge-icon/home-white.svg);
+}
+.example-nav-link-pay::before {
+  background-image: url(../../imges/badge-icon/pay-white.svg);
+}
+.example-nav-link-splits::before {
+  background-image: url(../../imges/badge-icon/splits-white.svg);
+}
+.example-nav-link-collectives::before {
+  background-image: url(../../imges/badge-icon/collectives.svg);
+}
+.example-nav-link-active {
+  opacity: 1;
+}
 .example-content {
   display: flex;
   flex-direction: column;
