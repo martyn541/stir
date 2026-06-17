@@ -1,7 +1,7 @@
 .collectives {
   background-color: #2b2a35;
   padding-top: 140px;
-  /* overflow: hidden; */
+  overflow: clip;
 }
 .collectives-wrapper {
   display: flex;
@@ -30,7 +30,7 @@
   font-weight: 700;
 }
 .collectives-text {
-  margin-bottom: 72px;
+  margin-bottom: 44px;
   color: #ffffff;
   text-align: center;
 }
@@ -40,7 +40,7 @@
   /* animation-iteration-count: 1; */
   animation-fill-mode: both;
   animation-timeline: view();
-  animation-range: -25% 80%;
+  animation-range: -35% 75%;
 }
 @keyframes fadeDown {
   0% {
@@ -48,5 +48,27 @@
   }
   100% {
     transform: translateY(5%);
+  }
+}
+@media (max-width: 992px) {
+  .collectives {
+    padding-top: 85px;
+  }
+  .collectives-heading {
+    margin-bottom: 18px;
+  }
+  .collectives-title {
+    font-size: 44px;
+  }
+  .collectives-text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .collectives {
+    padding-top: 20px;
+  }
+  .collectives-title {
+    font-size: 38px;
   }
 }

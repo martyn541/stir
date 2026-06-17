@@ -22,6 +22,15 @@
   align-items: center;
   gap: 10px;
 }
+.example-menu-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../imges/menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
 .example-title {
   color: #ffffff;
   font-size: 24px;
@@ -93,4 +102,15 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+}
+@media (max-width: 992px) {
+  .example-nav-list {
+    display: none;
+  }
+  .example-account {
+    display: none;
+  }
+  .example-menu-button {
+    display: inline-block;
+  }
 }
