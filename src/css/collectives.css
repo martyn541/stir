@@ -1,0 +1,74 @@
+.collectives {
+  background-color: #2b2a35;
+  padding-top: 140px;
+  overflow: clip;
+}
+.collectives-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collectives-badge {
+  margin-bottom: 31px;
+}
+.collectives-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 750px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.collectives-subtitle {
+  color: #6ee4b5;
+}
+.collectives-title {
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.collectives-text {
+  margin-bottom: 44px;
+  color: #ffffff;
+  text-align: center;
+}
+.collectives-example {
+  animation-name: fadeDown;
+  /* animation-duration: 2s; */
+  /* animation-iteration-count: 1; */
+  animation-fill-mode: both;
+  animation-timeline: view();
+  animation-range: -35% 75%;
+}
+@keyframes fadeDown {
+  0% {
+    transform: translateY(110%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
+@media (max-width: 992px) {
+  .collectives {
+    padding-top: 85px;
+  }
+  .collectives-heading {
+    margin-bottom: 18px;
+  }
+  .collectives-title {
+    font-size: 44px;
+  }
+  .collectives-text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .collectives {
+    padding-top: 20px;
+  }
+  .collectives-title {
+    font-size: 38px;
+  }
+}
