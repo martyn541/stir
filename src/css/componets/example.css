@@ -3,10 +3,97 @@
   padding: 16px 4px 4px;
   border-radius: 12px;
 }
+.example-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.example-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.example-heading {
+  text-align: center;
+  margin-bottom: 17px;
+}
+.example-account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.example-menu-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../imges/menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+.example-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.example-subtitle {
+  color: #ffffff;
+  font-size: 12px;
+}
+.example-header {
+  margin-bottom: 20px;
+  padding-inline: 20px;
+}
+.example-nav-link {
+  color: #ffffff;
+  font-weight: 400;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &::before {
+    content: "";
+    width: 19px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../imges/badge-icon/home-white.svg);
+  }
+}
+.example-nav-link-home::before {
+  background-image: url(../../imges/badge-icon/home-white.svg);
+}
+.example-nav-link-pay::before {
+  background-image: url(../../imges/badge-icon/pay-white.svg);
+}
+.example-nav-link-splits::before {
+  background-image: url(../../imges/badge-icon/splits-white.svg);
+}
+.example-nav-link-collectives::before {
+  background-image: url(../../imges/badge-icon/collectives.svg);
+}
+.example-nav-link-active {
+  opacity: 1;
+}
+.example-nav-link-active::before {
+  /* Тінь іконки */
+  /* box-shadow: 0px 2.18px 4.5px 0 rgb(0, 0, 0, 0.2); */
+  /* filter: drop-shadow(0px 2.18px 4.5px 0 rgb(0, 0, 0, 0.2)); */
+}
+.example-account-name {
+  color: #ffffff;
+}
 .example-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   padding-top: 90px;
   border-radius: 8px;
+}
+.example-content-collectives {
+  padding-top: 0px;
 }
 .example-actions {
   border-top: 1px solid #ededed;
@@ -17,7 +104,16 @@
   justify-content: center;
 }
 @media (max-width: 992px) {
-  .example-content {
+  .example-nav-list {
+    display: none;
+  }
+  .example-account {
+    display: none;
+  }
+  .example-menu-button {
+    display: inline-block;
+  }
+   .example-content {
     padding-top: 15px;
   }
 }
