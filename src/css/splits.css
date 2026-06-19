@@ -74,7 +74,7 @@
   font-size: 24px;
   line-height: 1.5;
   font-weight: 700;
-  padding-bottom: 75px;
+  margin-bottom: 75px;
 }
 .platfoms-title {
   font-size: 14px;
@@ -85,8 +85,6 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
-}
-.platfoms-item {
 }
 .platfoms-link {
   padding: 6px 18px 6px 6px;
@@ -176,4 +174,55 @@
 .site-description {
   font-size: 10px;
   color: #61697e;
+}
+@media (max-width: 992px) {
+  .splits {
+    padding-block: 20px;
+  }
+  .splits-content {
+    flex-direction: column;
+  }
+  .splits-heading {
+    margin-bottom: 0;
+  }
+  .splits-title {
+    font-size: 44px;
+  }
+  .splits-title::before,
+  .splits-title::after {
+    display: none;
+  }
+  .content-left {
+    max-width: none;
+  }
+  .splits-text {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .platfoms-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .platfoms-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 6px;
+  }
+  .content-right {
+    min-width: auto;
+    transform: translateX(0);
+  }
+  .sites-item {
+    flex-basis: calc((100% - 20px) / 3);
+  }
+  .sites-list {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .sites-item {
+    flex-basis: calc((100% - 10px) / 2);
+  }
 }

@@ -113,4 +113,7 @@
   .example-menu-button {
     display: inline-block;
   }
+   .example-content {
+    padding-top: 15px;
+  }
 }
