@@ -16,3 +16,8 @@
   gap: 10px;
   justify-content: center;
 }
+@media (max-width: 992px) {
+  .example-content {
+    padding-top: 15px;
+  }
+}
