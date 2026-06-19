@@ -76,11 +76,6 @@
 .example-nav-link-active {
   opacity: 1;
 }
-.example-nav-link-active::before {
-  /* Тінь іконки */
-  /* box-shadow: 0px 2.18px 4.5px 0 rgb(0, 0, 0, 0.2); */
-  /* filter: drop-shadow(0px 2.18px 4.5px 0 rgb(0, 0, 0, 0.2)); */
-}
 .example-account-name {
   color: #ffffff;
 }
@@ -113,7 +108,7 @@
   .example-menu-button {
     display: inline-block;
   }
-   .example-content {
+  .example-content {
     padding-top: 15px;
   }
 }
