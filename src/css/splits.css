@@ -175,7 +175,7 @@
   font-size: 10px;
   color: #61697e;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .splits {
     padding-block: 20px;
   }
