@@ -1,0 +1,101 @@
+.business {
+  padding-block: 164px;
+}
+.business-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.business-heading {
+  max-width: 725px;
+  text-align: center;
+}
+.business-subtitle {
+  color: #7352ff;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.business-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.06;
+}
+
+.business-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.business-item {
+  flex-basis: calc((100% - 60px) / 4);
+}
+
+.business-card {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  min-height: 100%;
+  border-radius: 10px;
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+}
+.business-card-home::before {
+  background-image: url(../imges/badge-icon/home-white.svg);
+  background-color: #7352ff;
+}
+.business-card-pay::before {
+  background-image: url(../imges/badge-icon/pay-white.svg);
+  background-color: #a4b96d;
+}
+.business-card-splits::before {
+  background-image: url(../imges/badge-icon/splits-white.svg);
+  background-color: #f6c627;
+}
+.business-card-collectives::before {
+  background-image: url(../imges/badge-icon/collectives.svg);
+  background-color: #6ee4b5;
+}
+.business-card-name {
+  font-size: 24px;
+}
+.business-card-text {
+  font-size: 16px;
+  color: #616a7e;
+}
+
+@media (max-width: 992px) {
+  .business {
+    padding-block: 100px;
+  }
+  .business-title {
+    font-size: 44px;
+  }
+  .business-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 480px) {
+  .business {
+    padding-block: 60px;
+  }
+  .business-title {
+    font-size: 38px;
+  }
+  .business-item {
+    flex-basis: 100%;
+  }
+}
