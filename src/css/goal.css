@@ -1,0 +1,14 @@
+.goal {
+  padding-top: 200px;
+  padding-bottom: 250px;
+}
+.goal-heading {
+  text-align: center;
+}
+.goal-title {
+  color: #ff573d;
+}
+.goal-text {
+  font-size: 40px;
+  line-height: 1.3;
+}
