@@ -51,6 +51,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-duration: 0.7s;
+  &:hover {
+    opacity: 1;
+  }
   &::before {
     content: "";
     width: 19px;
