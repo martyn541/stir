@@ -86,9 +86,14 @@
   gap: 10px;
   flex-direction: column;
 }
+.platfoms-list:hover .platfoms-link {
+  opacity: 0.1;
+}
 .platfoms-link {
   padding: 6px 18px 6px 6px;
   border-radius: 20px;
+  transition-duration: 0.8s;
+  transition-property: opacity, transform;
   border-color: #ededed;
   border-width: 1px;
   border-style: solid;
@@ -102,6 +107,10 @@
     background-image: url(../imges/social-placeholdr.svg);
     background-size: contain;
   }
+}
+.platfoms-list .platfoms-link:hover {
+  opacity: 1;
+  transform: scale(1.07);
 }
 .platfoms-link-youtube::before {
   background-image: url(../imges/youtube.svg);

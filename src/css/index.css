@@ -3,6 +3,7 @@
 /* компоненти стилів */
 @import "./componets/badge.css";
 @import "./componets/example.css";
+@import "./componets/gallery.css";
 /* секції */
 @import "./header.css";
 @import "./hero.css";
@@ -12,3 +13,4 @@
 @import "./collectives.css";
 @import "./security.css";
 @import "./business.css";
+@import "./drops.css";

@@ -1,0 +1,57 @@
+.drops {
+  padding-top: 180px;
+  padding-bottom: 284px;
+  background-color: #191919;
+}
+.drops-wrapper:hover .gallery-item:not(:hover) {
+  transform: scale(0.9);
+  filter: blur(5px);
+}
+.drops-top {
+  max-width: 588px;
+  margin-bottom: 170px;
+}
+.drops-badge {
+  color: #ffffff;
+  border-radius: 58px;
+  border: 1px solid #6ee4b5;
+  padding-inline: 13px;
+  padding-block: 8px;
+  margin-bottom: 28px;
+  display: inline-block;
+}
+.drops-title {
+  font-size: 64px;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+.drops-text {
+  color: #ffffff;
+  margin-bottom: 53px;
+}
+.drops-email-enter {
+  color: #ffffff;
+  display: inline-block;
+  padding-inline: 108px;
+  padding-block: 10px;
+  border-radius: 13px;
+  border: 1px solid #ffffff;
+  transition-property: background-color, color;
+  transition-duration: 1.3s;
+  &:hover {
+    background-color: #ffffff;
+    color: #191919;
+  }
+}
+.gallery {
+  display: flex;
+  gap: 64px;
+}
+.gallery-item {
+  flex-basis: calc((100% - 128px) / 3);
+  transition-property: filter, transform;
+  transition-duration: 1.3s;
+}
+.gallery-item {
+}

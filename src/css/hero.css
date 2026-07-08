@@ -42,6 +42,10 @@
   padding-block: 21px;
   color: #ffffff;
   font-size: 12px;
+  transition-duration: 0.8s;
+  &:hover {
+    transform: scaleX(1.05);
+  }
 }
 @media (max-width: 576px) {
   .hero-title {
