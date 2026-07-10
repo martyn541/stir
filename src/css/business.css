@@ -1,5 +1,11 @@
 .business {
   padding-block: 164px;
+  transition-duration: 1s;
+}
+.business:hover .business-item:not(:hover) {
+  transform: scale(0.9);
+  filter: blur(5px);
+  transition-duration: 1s;
 }
 .business-wrapper {
   display: flex;
@@ -31,6 +37,7 @@
 }
 .business-item {
   flex-basis: calc((100% - 60px) / 4);
+  transition-duration: 1s;
 }
 
 .business-card {
